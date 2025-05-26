@@ -1,0 +1,1592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India's 'Akashteer' system shines in Ops Sindoor, DRDO chief foresees international demand - Deccan Herald</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        /* Header Styles */
+        .top-header {
+            background: linear-gradient(135deg, #2ba3c7, #1e8aa8);
+            color: white;
+            padding: 0.4rem 0;
+            position: relative;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1rem;
+        }
+
+        .main-nav {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            flex: 1;
+            margin-left: 2rem;
+            overflow-x: auto;
+        }
+
+        .main-nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 500;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            transition: background 0.3s;
+            white-space: nowrap;
+        }
+
+        .main-nav a:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .nav-separator {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.7rem;
+            margin: 0 0.1rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.8rem;
+        }
+
+        .header-right span {
+            color: white;
+            font-weight: 500;
+        }
+
+        .sign-in-btn {
+            background: rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background 0.3s;
+            font-size: 0.75rem;
+        }
+
+        .sign-in-btn:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        /* Navigation */
+        .nav-bar {
+            background: white;
+            color: #333;
+            padding: 0.4rem 0;
+            position: relative;
+            z-index: 999;
+            border-bottom: 1px solid #eee;
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.2rem;
+            overflow-x: auto;
+            padding: 0.2rem 0;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            white-space: nowrap;
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            transition: background 0.3s;
+            font-size: 0.8rem;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            background: #f0f0f0;
+            color: #2ba3c7;
+        }
+
+        /* Main Content Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .breadcrumb a {
+            color: #2ba3c7;
+            text-decoration: none;
+        }
+
+        /* Article Content */
+        .article-content {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .article-header {
+            padding: 2rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .article-title {
+            font-size: 2.2rem;
+            font-weight: bold;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+        }
+
+        .article-subtitle {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 1.5rem;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .author-info {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .author-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #666;
+        }
+
+        .timestamp {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Follow Us Section */
+        .follow-us-section {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            padding: 1rem 0;
+            border-top: 1px solid #eee;
+            background: white;
+            transition: all 0.3s ease;
+        }
+
+        .follow-us-section.sticky {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            padding: 0.8rem 1rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-top: none;
+            border-bottom: 1px solid #eee;
+            margin: 0;
+            transition: top 0.3s ease;
+        }
+
+        .follow-us-label {
+            font-weight: 600;
+            color: #333;
+            font-size: 0.9rem;
+        }
+
+        .follow-us-icons {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .follow-icon {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            padding: 0.4rem 0.6rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #666;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .follow-icon:hover {
+            background: #f8f9fa;
+            border-color: #2ba3c7;
+            color: #2ba3c7;
+        }
+
+        .whatsapp-icon {
+            color: #25D366;
+        }
+
+        .whatsapp-icon:hover {
+            background: #f0f8f4;
+            border-color: #25D366;
+            color: #25D366;
+        }
+
+        .google-news-icon {
+            color: #4285f4;
+        }
+
+        .google-news-icon:hover {
+            background: #f2f6ff;
+            border-color: #4285f4;
+            color: #4285f4;
+        }
+
+        .comments-icon {
+            position: relative;
+        }
+
+        .comment-count {
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .share-icon {
+            color: #666;
+        }
+
+        /* Main Image */
+        .main-image {
+            position: relative;
+            margin: 0 2rem 2rem;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .main-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .image-caption {
+            background: rgba(0,0,0,0.8);
+            color: white;
+            padding: 1rem;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Article Body */
+        .article-body {
+            padding: 0 2rem 2rem;
+        }
+
+        .article-body p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .quote {
+            background: #f8f9fa;
+            border-left: 4px solid #2ba3c7;
+            padding: 1rem;
+            margin: 2rem 0;
+            font-style: italic;
+            border-radius: 4px;
+        }
+
+        /* Video Player */
+        .video-container {
+            margin: 2rem 0;
+            position: relative;
+            background: #000;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .video-placeholder {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(45deg, #1a1a1a, #333);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .play-button {
+            width: 80px;
+            height: 80px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .play-button:hover {
+            transform: scale(1.1);
+        }
+
+        /* Sidebar */
+        .sidebar {
+            display: none;
+        }
+
+        .sidebar-section {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            overflow: hidden;
+        }
+
+        .sidebar-header {
+            background: #2ba3c7;
+            color: white;
+            padding: 1rem;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .sidebar-content {
+            padding: 1rem;
+        }
+
+        .news-item {
+            display: flex;
+            gap: 1rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .news-item:last-child {
+            border-bottom: none;
+        }
+
+        .news-thumbnail {
+            width: 80px;
+            height: 60px;
+            background: #ddd;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+
+        .news-content h4 {
+            font-size: 0.9rem;
+            line-height: 1.4;
+            margin-bottom: 0.5rem;
+        }
+
+        .news-content h4 a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+
+        .news-content h4 a:hover {
+            color: #2ba3c7;
+        }
+
+        .news-time {
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        /* Related Articles */
+        .related-articles {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .related-articles h3 {
+            display: none; /* Hide the Related Articles heading */
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            width: 100%; /* Ensure full width */
+        }
+
+        .related-item {
+            display: flex;
+            gap: 1rem;
+            padding: 1rem;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            transition: box-shadow 0.3s;
+        }
+
+        .related-item:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .related-thumbnail {
+            width: 80px;
+            height: 60px;
+            background: #ddd;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+
+        .related-content h4 {
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .related-content h4 a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+
+        .related-content h4 a:hover {
+            color: #2ba3c7;
+        }
+
+        /* Desktop Sticky Related Articles */
+        @media (min-width: 768px) {
+            .related-articles {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: 0;
+                padding: 0.5rem;
+                border-radius: 0;
+                border-top: 1px solid #ddd;
+                box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+                z-index: 998;
+                max-height: 80px;
+                overflow: hidden;
+            }
+
+            .related-articles::before,
+            .related-articles::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 30px;
+                pointer-events: none;
+                z-index: 10;
+            }
+
+            .related-articles::before {
+                left: 0;
+                background: linear-gradient(to right, white 0%, rgba(255,255,255,0.8) 50%, transparent 100%);
+            }
+
+            .related-articles::after {
+                right: 0;
+                background: linear-gradient(to left, white 0%, rgba(255,255,255,0.8) 50%, transparent 100%);
+            }
+
+            .related-articles h3 {
+                display: none; /* Hide heading on desktop too */
+            }
+
+            .related-grid {
+                display: flex;
+                gap: 0.5rem;
+                max-width: 100%; /* Full width instead of 1200px */
+                margin: 0;
+                overflow-x: auto;
+                padding-bottom: 0;
+                scroll-behavior: smooth;
+                scrollbar-width: thin;
+                scrollbar-color: #ccc transparent;
+                width: 100%; /* Ensure full width */
+            }
+
+            .related-grid::-webkit-scrollbar {
+                height: 4px;
+            }
+
+            .related-grid::-webkit-scrollbar-track {
+                background: transparent;
+            }
+
+            .related-grid::-webkit-scrollbar-thumb {
+                background: #ccc;
+                border-radius: 2px;
+            }
+
+            .related-grid::-webkit-scrollbar-thumb:hover {
+                background: #999;
+            }
+
+            .related-item {
+                min-width: 240px;
+                max-width: 240px;
+                padding: 0.3rem;
+                gap: 0.3rem;
+                flex-shrink: 0;
+                border: 1px solid #eee;
+                border-radius: 6px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+
+            .related-item:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                border-color: #2ba3c7;
+            }
+
+            .related-thumbnail {
+                width: 50px;
+                height: 35px;
+            }
+
+            .related-content h4 {
+                font-size: 0.7rem;
+                line-height: 1.2;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                margin: 0;
+            }
+        }
+
+        /* Advertisement Placeholder */
+        .ad-placeholder {
+            background: #f0f0f0;
+            border: 2px dashed #ccc;
+            padding: 2rem;
+            text-align: center;
+            color: #666;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        /* Mobile Bottom Navigation */
+        .mobile-bottom-container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sticky-ad {
+            background: #f0f0f0;
+            color: #666;
+            padding: 1.4rem 1rem;
+            text-align: center;
+            font-size: 0.95rem;
+            font-weight: 500;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .sticky-ad:hover {
+            background: #e8e8e8;
+        }
+
+        .sticky-ad-close {
+            position: absolute;
+            right: 0.5rem;
+            background: #ccc;
+            border: none;
+            color: #666;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            font-size: 0.7rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mobile-nav {
+            display: flex;
+            background: white;
+            border-top: 1px solid #eee;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        }
+
+        .mobile-nav-item {
+            flex: 1;
+            padding: 0.4rem 0.3rem;
+            text-align: center;
+            text-decoration: none;
+            color: #666;
+            font-size: 0.65rem;
+            border-right: 1px solid #eee;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.1rem;
+        }
+
+        .mobile-nav-item:last-child {
+            border-right: none;
+        }
+
+        .mobile-nav-item.active {
+            color: #2ba3c7;
+            background: #f8f9fa;
+        }
+
+        .mobile-nav-icon {
+            font-size: 1.1rem;
+        }
+
+        /* Mobile Main Navigation */
+        .mobile-main-nav {
+            display: none;
+            background: #1a1a1a;
+            color: white;
+            padding: 0.3rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            overflow-x: auto;
+            transition: transform 0.3s ease;
+            /* Hide scrollbar */
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none; /* IE and Edge */
+        }
+
+        .mobile-main-nav::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, Opera */
+        }
+
+        .mobile-main-nav.hidden {
+            transform: translateY(-100%);
+            pointer-events: none;
+        }
+
+        .mobile-main-nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .mobile-main-nav-links {
+            display: flex;
+            gap: 0.8rem;
+            padding: 0.2rem 0;
+            white-space: nowrap;
+        }
+
+        .mobile-main-nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.75rem;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            transition: background 0.3s;
+        }
+
+        .mobile-main-nav-links a:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .mobile-nav-separator {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.6rem;
+        }
+
+        /* Sidebar Ad Slot 300x250 */
+        .sidebar-ad-slot {
+            background: #f0f0f0;
+            border: 2px dashed #ccc;
+            width: 300px;
+            height: 250px;
+            margin: 0 auto 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 1rem;
+            font-weight: 500;
+            text-align: center;
+            position: relative;
+        }
+
+        .sidebar-ad-slot::before {
+            content: 'ADVERTISEMENT';
+            position: absolute;
+            top: 0.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.7rem;
+            color: #999;
+            background: #f0f0f0;
+            padding: 0.2rem 0.4rem;
+        }
+
+        /* Desktop Ad Slot */
+        .desktop-ad-banner {
+            display: none;
+            background: #f0f0f0;
+            border: 2px dashed #ccc;
+            padding: 3rem 2rem;
+            text-align: center;
+            color: #666;
+            margin: 1.5rem auto;
+            max-width: 1200px;
+            font-size: 1.2rem;
+            font-weight: 500;
+            min-height: 200px;
+            position: relative;
+        }
+
+        .desktop-ad-banner::before {
+            content: 'ADVERTISEMENT';
+            position: absolute;
+            top: 0.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.8rem;
+            color: #999;
+            background: #f0f0f0;
+            padding: 0.2rem 0.5rem;
+        }
+
+        /* Desktop Layout */
+        @media (min-width: 768px) {
+            body {
+                padding-bottom: 80px; /* Account for reduced height of sticky related articles */
+            }
+
+            .top-header {
+                position: sticky;
+                top: 0;
+            }
+
+            .mobile-main-nav {
+                display: none;
+            }
+
+            .nav-bar {
+                position: relative;
+                background: #1a1a1a;
+                color: white;
+                border-bottom: none;
+            }
+
+            .nav-links a {
+                color: white;
+            }
+
+            .nav-links a:hover,
+            .nav-links a.active {
+                background: #2ba3c7;
+                color: white;
+            }
+            
+            .follow-us-section.sticky {
+                position: fixed !important;
+                top: 59px !important;
+                left: calc(50% - 600px + 1rem) !important;
+                transform: none !important;
+                width: calc((1200px - 3rem - 2rem) * 2 / 3) !important; /* Main content: 2fr of 3fr grid */
+                max-width: calc((1200px - 3rem - 2rem) * 2 / 3) !important;
+                margin: 0 !important;
+                padding: 0.8rem 1rem !important;
+                border-radius: 8px !important;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.15) !important;
+                z-index: 999 !important;
+                background: white !important;
+                border: 1px solid #ddd !important;
+            }
+            
+            .container {
+                grid-template-columns: 2fr 1fr;
+                gap: 3rem;
+            }
+
+            .sidebar {
+                display: block;
+            }
+
+            .desktop-ad-banner {
+                display: block;
+            }
+
+            .mobile-bottom-container {
+                display: none;
+            }
+
+            .mobile-nav {
+                display: none;
+            }
+
+            .article-title {
+                font-size: 2.8rem;
+            }
+
+            .nav-links {
+                overflow: visible;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .related-articles {
+                display: none; /* Hide on mobile to avoid conflicts with bottom nav */
+            }
+
+            .header-content {
+                padding: 0 0.5rem;
+            }
+
+            .logo {
+                font-size: 1.5rem;
+            }
+
+            .main-nav {
+                display: none;
+            }
+
+            .mobile-main-nav {
+                display: block;
+            }
+
+            .header-right {
+                gap: 0.8rem;
+                font-size: 0.75rem;
+            }
+
+            .header-right span {
+                display: inline;
+            }
+
+            .sign-in-btn {
+                font-size: 0.7rem;
+                padding: 0.25rem 0.5rem;
+            }
+
+            .nav-bar {
+                position: relative;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                padding: 0.3rem 0;
+            }
+
+            .nav-links a {
+                font-size: 0.75rem;
+                padding: 0.25rem 0.5rem;
+            }
+
+            .container {
+                padding: 1rem 0.5rem 7.5rem;
+            }
+
+            .article-header {
+                padding: 1.5rem;
+            }
+
+            .article-title {
+                font-size: 1.8rem;
+            }
+
+            .main-image {
+                margin: 0 1rem 1.5rem;
+            }
+
+            .article-body {
+                padding: 0 1.5rem 1.5rem;
+            }
+
+            .related-articles {
+                padding: 1.5rem;
+            }
+
+            .social-share {
+                margin-left: 0;
+                margin-top: 1rem;
+            }
+
+            .article-meta {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .follow-us-section {
+                flex-direction: row;
+                align-items: center;
+                gap: 0.5rem;
+                margin-top: 1rem;
+                padding: 0.8rem 0;
+            }
+
+            .follow-us-label {
+                font-size: 0.8rem;
+                white-space: nowrap;
+            }
+
+            .follow-us-icons {
+                gap: 0.4rem;
+                overflow-x: auto;
+            }
+
+            .follow-icon {
+                padding: 0.3rem 0.4rem;
+                font-size: 0.8rem;
+                min-width: auto;
+                flex-shrink: 0;
+            }
+
+            .follow-icon svg {
+                width: 16px;
+                height: 16px;
+            }
+
+            .follow-us-section.sticky {
+                padding: 0.8rem 1rem;
+                gap: 0.5rem;
+                top: 0;
+                margin: 0;
+                transition: top 0.3s ease;
+            }
+
+            .follow-us-section.sticky .follow-us-label {
+                font-size: 0.75rem;
+            }
+
+            .follow-us-section.sticky .follow-icon {
+                padding: 0.4rem 0.5rem;
+            }
+
+            .follow-us-section.sticky .follow-icon svg {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Header -->
+    <header class="top-header">
+        <div class="header-content">
+            <div class="logo">DH</div>
+            <nav class="main-nav">
+                <a href="#">Home</a>
+                <span class="nav-separator">|</span>
+                <a href="#">India</a>
+                <span class="nav-separator">|</span>
+                <a href="#">Karnataka</a>
+                <span class="nav-separator">|</span>
+                <a href="#">Opinion</a>
+                <span class="nav-separator">|</span>
+                <a href="#">World</a>
+                <span class="nav-separator">|</span>
+                <a href="#">Business</a>
+                <span class="nav-separator">|</span>
+                <a href="#">Sports</a>
+                <span class="nav-separator">|</span>
+                <a href="#">Video</a>
+            </nav>
+            <div class="header-right">
+                <span>Newsletters 🔒</span>
+                <span>ePaper ↗</span>
+                <a href="#" class="sign-in-btn">👤 Sign in</a>
+                <button style="background: none; border: none; color: white; font-size: 1rem; padding: 0.2rem;">🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Main Navigation -->
+    <nav class="mobile-main-nav">
+        <div class="mobile-main-nav-content">
+            <div class="mobile-main-nav-links">
+                <a href="#">Home</a>
+                <span class="mobile-nav-separator">|</span>
+                <a href="#">India</a>
+                <span class="mobile-nav-separator">|</span>
+                <a href="#">Karnataka</a>
+                <span class="mobile-nav-separator">|</span>
+                <a href="#">Opinion</a>
+                <span class="mobile-nav-separator">|</span>
+                <a href="#">World</a>
+                <span class="mobile-nav-separator">|</span>
+                <a href="#">Business</a>
+                <span class="mobile-nav-separator">|</span>
+                <a href="#">Sports</a>
+                <span class="mobile-nav-separator">|</span>
+                <a href="#">Video</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <div class="nav-content">
+            <div class="nav-links">
+                <a href="#">Operation Sindoor</a>
+                <a href="#">News Shots</a>
+                <a href="#">Explainers</a>
+                <a href="#">Bengaluru</a>
+                <a href="#">Trending</a>
+                <a href="#">Photos</a>
+                <a href="#">DH Brandspot</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Desktop Ad Banner -->
+    <div class="desktop-ad-banner">
+        Desktop Banner Advertisement Slot<br>
+        <small style="color: #999; font-size: 0.9rem;">1200 x 200px recommended</small>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Main Article -->
+        <main class="article-content">
+            <!-- Breadcrumb -->
+            <div class="breadcrumb" style="padding: 1rem 2rem 0;">
+                <a href="#">Home</a> › <a href="#">India</a> ›
+            </div>
+
+            <!-- Article Header -->
+            <header class="article-header">
+                <h1 class="article-title">India's 'Akashteer' system shines in Ops Sindoor, DRDO chief foresees international demand</h1>
+                <p class="article-subtitle">Kamat expressed optimism regarding the future of India's defence technology during a visit to Nagpur, where he toured facilities focused on manufacturing drones, missiles, and rockets.</p>
+                
+                <div class="article-meta">
+                    <div class="author-info">
+                        <div class="author-avatar">PTI</div>
+                        <span>PTI</span>
+                    </div>
+                    <div class="timestamp">Last Updated : 23 May 2025, 12:01 IST</div>
+                </div>
+
+                <!-- Follow Us Section -->
+                <div class="follow-us-section">
+                    <span class="follow-us-label">Follow Us :</span>
+                    <div class="follow-us-icons">
+                        <a href="#" class="follow-icon whatsapp-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.893 3.488"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="follow-icon google-news-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16c-.169 1.858-.896 3.616-2.092 5.024a6.066 6.066 0 01-4.568 2.08 6.056 6.056 0 01-4.564-2.08c-1.2-1.408-1.927-3.166-2.096-5.024h13.32z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="follow-icon comments-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+                            </svg>
+                            <span class="comment-count">1</span>
+                        </a>
+                        <a href="#" class="follow-icon share-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="18" cy="5" r="3"/>
+                                <circle cx="6" cy="12" r="3"/>
+                                <circle cx="18" cy="19" r="3"/>
+                                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+                                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main Image -->
+            <div class="main-image">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='400' viewBox='0 0 800 400'%3E%3Crect width='800' height='400' fill='%23e0e0e0'/%3E%3Ctext x='400' y='200' text-anchor='middle' dominant-baseline='middle' font-family='Arial' font-size='24' fill='%23666'%3EDRDO Chief Samir V Kamat%3C/text%3E%3C/svg%3E" alt="DRDO Chief Samir V Kamat">
+                <div class="image-caption">
+                    Development Organisation (DRDO) chief Samir V Kamat Credit: PTI Photo
+                </div>
+            </div>
+
+            <!-- Advertisement -->
+            <div class="ad-placeholder">
+                ADVERTISEMENT
+            </div>
+
+            <!-- Article Body -->
+            <div class="article-body">
+                <p><strong>Nagpur:</strong> India's top defence scientist is confident that the success of the indigenously-developed 'Akashteer' air defence system during Operation Sindoor will draw interest from other countries.</p>
+
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <div class="play-button">
+                            <div style="width: 0; height: 0; border-left: 20px solid #333; border-top: 12px solid transparent; border-bottom: 12px solid transparent; margin-left: 4px;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <p>'Akashteer', the fully automated air defence control and reporting system emerged as the invisible force of new war capabilities during Operation Sindoor, launched against nine terror sites in Pakistan and Pakistan-occupied <a href="#" style="color: #2ba3c7;">Kashmir</a>.</p>
+
+                <div class="quote">
+                    "Definitely, our air defence system has performed exceedingly well, and I am sure there will be interest from other countries," Development Research and Organisation (DRDO) chief Samir V Kamat told PTI. The development was first reported by a news portal.
+                </div>
+
+                <p>Kamat expressed optimism regarding the future of India's defence technology during a visit to Nagpur, where he toured facilities focused on manufacturing drones, missiles, and rockets.</p>
+
+                <p>The DRDO chief's confidence stems from the system's performance during recent operations, where it demonstrated superior capabilities in tracking and neutralizing threats with precision and efficiency.</p>
+
+                <div class="ad-placeholder">
+                    ADVERTISEMENT
+                </div>
+
+                <p>The Akashteer system represents a significant milestone in India's journey towards self-reliance in defence technology, showcasing the country's growing capabilities in developing sophisticated military systems.</p>
+            </div>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <!-- Sidebar Ad Slot 300x250 -->
+            <div class="sidebar-ad-slot">
+                Sidebar Ad Slot<br>
+                <small style="color: #999; font-size: 0.8rem;">300 x 250px</small>
+            </div>
+            
+            <!-- Most Read Section -->
+            <div class="sidebar-section">
+                <div class="sidebar-header">Most Read</div>
+                <div class="sidebar-content">
+                    <div class="news-item">
+                        <div class="news-thumbnail"></div>
+                        <div class="news-content">
+                            <h4><a href="#">Today's Horoscope – May 23, 2025: Check horoscope for all sun signs</a></h4>
+                            <div class="news-time">18 hours ago</div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-thumbnail"></div>
+                        <div class="news-content">
+                            <h4><a href="#">Malayalam superstar Mohanlal turns 65; announces liver transplant aid, anti-drug drive</a></h4>
+                            <div class="news-time">21 May 2025, 16:05 IST</div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-thumbnail"></div>
+                        <div class="news-content">
+                            <h4><a href="#">Somnath Bharti's wife files defamation case against Sitharaman</a></h4>
+                            <div class="news-time">20 hours ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Latest News Section -->
+            <div class="sidebar-section">
+                <div class="sidebar-header">Latest News</div>
+                <div class="sidebar-content">
+                    <div class="news-item">
+                        <div class="news-thumbnail"></div>
+                        <div class="news-content">
+                            <h4><a href="#">Excluding Tharoor's name from Congress list insult to him: Former Kerala state party chief K...</a></h4>
+                            <div class="news-time">22 May 2025, 16:30 IST</div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-thumbnail"></div>
+                        <div class="news-content">
+                            <h4><a href="#">New OTT releases this week (May 22-30)</a></h4>
+                            <div class="news-time">19 hours ago</div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-thumbnail"></div>
+                        <div class="news-content">
+                            <h4><a href="#">DOGE expanding Grok AI in US govt, raising conflict concerns</a></h4>
+                            <div class="news-time">2 hours ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DH Picks Section -->
+            <div class="sidebar-section">
+                <div class="sidebar-header">DH PICKS →</div>
+                <div class="sidebar-content">
+                    <div class="news-item">
+                        <div class="news-thumbnail"></div>
+                        <div class="news-content">
+                            <h4><a href="#">Banker, baker, then mountaineer: Kerala woman's journey to peak of Mt Everest</a></h4>
+                            <div class="news-time">1 hour ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Advertisement -->
+            <div class="ad-placeholder">
+                ADVERTISEMENT
+            </div>
+        </aside>
+    </div>
+
+    <!-- Related Articles -->
+    <section class="related-articles">
+        <h3>Related Articles</h3>
+        <div class="related-grid">
+            <div class="related-item">
+                <div class="related-thumbnail"></div>
+                <div class="related-content">
+                    <h4><a href="#">BJP MLA Kunwar Lal Meena's assembly membership...</a></h4>
+                </div>
+            </div>
+            <div class="related-item">
+                <div class="related-thumbnail"></div>
+                <div class="related-content">
+                    <h4><a href="#">State government has all powers to rename Ramanagara as...</a></h4>
+                </div>
+            </div>
+            <div class="related-item">
+                <div class="related-thumbnail"></div>
+                <div class="related-content">
+                    <h4><a href="#">'LoP or Nishan-e-Pakistan?': BJP slams Rahul as Congress...</a></h4>
+                </div>
+            </div>
+            <div class="related-item">
+                <div class="related-thumbnail"></div>
+                <div class="related-content">
+                    <h4><a href="#">Andhra police bust international cyber fraud syndicate, 33...</a></h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Bottom Container with Ad and Navigation -->
+    <div class="mobile-bottom-container">
+        <!-- Sticky Ad -->
+        <div class="sticky-ad">
+            <span>ADVERTISEMENT</span>
+            <button class="sticky-ad-close">×</button>
+        </div>
+        
+        <!-- Mobile Bottom Navigation -->
+        <nav class="mobile-nav">
+            <a href="#" class="mobile-nav-item active">
+                <div class="mobile-nav-icon">🏠</div>
+                <div>Home</div>
+            </a>
+            <a href="#" class="mobile-nav-item">
+                <div class="mobile-nav-icon">📸</div>
+                <div>News Shots</div>
+            </a>
+            <a href="#" class="mobile-nav-item">
+                <div class="mobile-nav-icon">📈</div>
+                <div>Trending</div>
+            </a>
+            <a href="#" class="mobile-nav-item">
+                <div class="mobile-nav-icon">☰</div>
+                <div>Menu</div>
+            </a>
+        </nav>
+    </div>
+
+    <script>
+        let lastScrollTop = 0;
+        let followUsSection = null;
+        let followUsSectionTop = 0;
+        let mobileMainNav = null;
+        let isDesktop = window.innerWidth >= 768;
+        let scrollTimeout = null;
+        let isScrolling = false;
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            followUsSection = document.querySelector('.follow-us-section');
+            mobileMainNav = document.querySelector('.mobile-main-nav');
+            
+            // Handle sticky ad close functionality
+            const stickyAdClose = document.querySelector('.sticky-ad-close');
+            const stickyAd = document.querySelector('.sticky-ad');
+            
+            if (stickyAdClose && stickyAd) {
+                stickyAdClose.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    stickyAd.style.display = 'none';
+                    console.log('📱 Sticky ad closed');
+                    
+                    // Update container padding to account for removed ad
+                    const container = document.querySelector('.container');
+                    if (container && window.innerWidth < 768) {
+                        container.style.paddingBottom = '5rem'; // Reduced from 7.5rem
+                    }
+                });
+                
+                // Handle ad click (excluding close button)
+                stickyAd.addEventListener('click', function(e) {
+                    if (e.target !== stickyAdClose) {
+                        console.log('📱 Sticky ad placeholder clicked');
+                        // Placeholder - replace with actual ad functionality
+                    }
+                });
+            }
+            
+            console.log('🚀 Scroll tracking initialized');
+            console.log('📱 Device type:', isDesktop ? 'Desktop' : 'Mobile');
+            
+            // Log initial sticky state
+            if (!isDesktop) {
+                console.log('📌 INITIAL STATE - Mobile black nav is STICKY by default');
+                console.log('📌 Currently sticky items: Black Nav only (until Follow Us activates)');
+            } else {
+                console.log('📌 INITIAL STATE - Desktop blue header is STICKY by default');
+                console.log('📌 Currently sticky items: Blue Header only (until Follow Us activates)');
+            }
+            
+            // Calculate the follow us section position
+            function updateFollowUsSectionTop() {
+                if (followUsSection && !followUsSection.classList.contains('sticky')) {
+                    if (isDesktop) {
+                        // Desktop: Get absolute position of Follow Us from document top
+                        const followUsRect = followUsSection.getBoundingClientRect();
+                        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                        const followUsAbsoluteTop = followUsRect.top + scrollTop;
+                        
+                        // Get blue header height
+                        const blueHeader = document.querySelector('.top-header');
+                        const blueHeaderHeight = blueHeader ? blueHeader.offsetHeight : 59;
+                        
+                        // Trigger when Follow Us top would hit bottom of blue header
+                        followUsSectionTop = followUsAbsoluteTop - blueHeaderHeight;
+                        
+                        console.log('🖥️ === DESKTOP POSITION CALCULATION (FIXED) ===');
+                        console.log('🖥️ Current scroll position:', scrollTop + 'px');
+                        console.log('🖥️ Follow Us rect.top:', followUsRect.top + 'px');
+                        console.log('🖥️ Follow Us absolute position:', followUsAbsoluteTop + 'px');
+                        console.log('🖥️ Blue header height:', blueHeaderHeight + 'px');
+                        console.log('🖥️ Follow Us will stick when scroll > ' + followUsSectionTop + 'px');
+                        console.log('🖥️ Target: Follow Us sticky when it hits blue header');
+                        console.log('🖥️ =============================================');
+                    } else {
+                        // Mobile: Keep existing calculation
+                        const articleHeader = followUsSection.closest('.article-header');
+                        const followUsOffsetTop = followUsSection.offsetTop;
+                        const articleHeaderOffsetTop = articleHeader.offsetTop;
+                        followUsSectionTop = followUsOffsetTop + articleHeaderOffsetTop - 229;
+                        
+                        console.log('📱 === MOBILE POSITION CALCULATION ===');
+                        console.log('📱 Follow Us offsetTop:', followUsOffsetTop + 'px');
+                        console.log('📱 Article Header offsetTop:', articleHeaderOffsetTop + 'px');
+                        console.log('📱 Follow Us will stick when scroll > ' + followUsSectionTop + 'px');
+                        console.log('📱 Target: Follow Us sticky when it hits black bar');
+                        console.log('📱 ===================================');
+                    }
+                }
+            }
+            
+            // Update on resize
+            window.addEventListener('resize', function() {
+                const wasDesktop = isDesktop;
+                isDesktop = window.innerWidth >= 768;
+                if (wasDesktop !== isDesktop) {
+                    console.log('📱 Device type changed to:', isDesktop ? 'Desktop' : 'Mobile');
+                }
+                updateFollowUsSectionTop();
+            });
+            
+            // Initial calculation
+            updateFollowUsSectionTop();
+            
+            // Throttled scroll handler
+            function handleScroll() {
+                if (isScrolling) return;
+                isScrolling = true;
+                
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                const scrollDirection = scrollTop > lastScrollTop ? 'down' : 'up';
+                const isFollowUsOutOfViewport = scrollTop > followUsSectionTop;
+                const scrollDifference = Math.abs(scrollTop - lastScrollTop);
+                
+                // Only process significant scroll changes to prevent micro-scrolling loops
+                if (scrollDifference < 5) {
+                    isScrolling = false;
+                    return;
+                }
+                
+                // Log scroll direction (less frequently)
+                if (scrollDifference > 20) {
+                    console.log('⬇️⬆️ Scroll direction:', scrollDirection, '| Position:', scrollTop + 'px', '| Difference:', scrollDifference + 'px');
+                    
+                    // Log current sticky state during early scrolling (before Follow Us activation)
+                    if (!isDesktop && scrollTop < followUsSectionTop) {
+                        console.log('📌 EARLY SCROLL - Currently sticky items: Black Nav only (Follow Us not yet active)');
+                    }
+                }
+                
+                // Log when Follow Us goes out of viewport
+                if (isFollowUsOutOfViewport && !followUsSection.classList.contains('sticky')) {
+                    if (isDesktop) {
+                        console.log('🗄️ DESKTOP: Follow Us section went OUT OF VIEWPORT at:', scrollTop + 'px');
+                        console.log('🗄️ Expected threshold was:', followUsSectionTop + 'px');
+                        console.log('🗄️ Difference from expected:', (scrollTop - followUsSectionTop) + 'px');
+                    } else {
+                        console.log('👋 MOBILE: Follow Us section went OUT OF VIEWPORT at:', scrollTop + 'px');
+                        console.log('👋 Expected threshold was:', followUsSectionTop + 'px');
+                        console.log('👋 Difference from expected:', (scrollTop - followUsSectionTop) + 'px');
+                    }
+                } else if (!isFollowUsOutOfViewport && followUsSection.classList.contains('sticky')) {
+                    if (isDesktop) {
+                        console.log('👁️ DESKTOP: Follow Us section came BACK INTO VIEWPORT at:', scrollTop + 'px');
+                    } else {
+                        console.log('👁️ MOBILE: Follow Us section came BACK INTO VIEWPORT at:', scrollTop + 'px');
+                    }
+                }
+                
+                if (isDesktop) {
+                    // Desktop behavior: Follow us becomes sticky when scrolled past blue header
+                    if (scrollTop > followUsSectionTop) {
+                        if (!followUsSection.classList.contains('sticky')) {
+                            followUsSection.classList.add('sticky');
+                            console.log('🖥️ DESKTOP: Follow Us became STICKY at:', scrollTop + 'px');
+                            console.log('📌 Currently sticky items: Blue Header (top) + Follow Us Bar (below)');
+                        }
+                    } else {
+                        if (followUsSection.classList.contains('sticky')) {
+                            followUsSection.classList.remove('sticky');
+                            console.log('🖥️ DESKTOP: Follow Us became NORMAL at:', scrollTop + 'px');
+                            console.log('📌 Currently sticky items: Blue Header only');
+                        }
+                    }
+                } else {
+                    // Mobile behavior: Follow us becomes sticky and black nav hides/shows
+                    if (scrollTop > followUsSectionTop) {
+                        if (!followUsSection.classList.contains('sticky')) {
+                            followUsSection.classList.add('sticky');
+                            // Set initial position based on black nav visibility
+                            if (mobileMainNav.classList.contains('hidden')) {
+                                followUsSection.style.top = '0px';
+                            } else {
+                                const navHeight = mobileMainNav.offsetHeight;
+                                followUsSection.style.top = navHeight + 'px';
+                                console.log('📏 Black nav height measured:', navHeight + 'px');
+                            }
+                            console.log('📱 MOBILE: Follow Us became STICKY at:', scrollTop + 'px');
+                        }
+                        
+                        // Only change nav state on significant scroll movements
+                        if (scrollDifference > 15) {
+                            if (scrollDirection === 'down' && !mobileMainNav.classList.contains('hidden')) {
+                                mobileMainNav.classList.add('hidden');
+                                followUsSection.style.top = '0px'; // Move follow us to top when black nav hidden
+                                console.log('📱 MOBILE: Black nav HIDDEN (scrolling down) - Scroll diff:', scrollDifference + 'px');
+                                console.log('📌 Currently sticky items: Follow Us Bar only');
+                            } else if (scrollDirection === 'up' && mobileMainNav.classList.contains('hidden')) {
+                                mobileMainNav.classList.remove('hidden');
+                                const navHeight = mobileMainNav.offsetHeight;
+                                followUsSection.style.top = navHeight + 'px'; // Push follow us down by exact nav height
+                                console.log('📱 MOBILE: Black nav SHOWN (scrolling up) - Scroll diff:', scrollDifference + 'px');
+                                console.log('📏 Positioning Follow Us at:', navHeight + 'px (nav height)');
+                                console.log('📌 Currently sticky items: Black Nav (top) + Follow Us Bar (below)');
+                            }
+                        }
+                    } else {
+                        if (followUsSection.classList.contains('sticky')) {
+                            followUsSection.classList.remove('sticky');
+                            followUsSection.style.top = ''; // Reset inline style
+                            console.log('📱 MOBILE: Follow Us became NORMAL at:', scrollTop + 'px');
+                        }
+                        if (mobileMainNav.classList.contains('hidden')) {
+                            mobileMainNav.classList.remove('hidden');
+                            console.log('📱 MOBILE: Black nav RESTORED (back to top)');
+                            console.log('📌 Currently sticky items: Black Nav only');
+                        }
+                    }
+                }
+                
+                lastScrollTop = scrollTop;
+                
+                // Reset scrolling flag after a short delay
+                setTimeout(() => {
+                    isScrolling = false;
+                }, 50);
+            }
+            
+            // Use throttled scroll event
+            window.addEventListener('scroll', function() {
+                if (scrollTimeout) {
+                    clearTimeout(scrollTimeout);
+                }
+                scrollTimeout = setTimeout(handleScroll, 16); // ~60fps
+            });
+        });
+    </script>
+</body>
+</html>
