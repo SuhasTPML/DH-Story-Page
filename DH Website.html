@@ -5,6 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>India's 'Akashteer' system shines in Ops Sindoor, DRDO chief foresees international demand - Deccan Herald</title>
     <style>
+        /* Tab Styles */
+        .news-tabs-container {
+            position: relative;
+        }
+        
+        .tabs-header {
+            display: flex;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .tab-button {
+            padding: 0.8rem 1rem;
+            font-size: 1rem;
+            font-weight: 500;
+            color: #666;
+            cursor: pointer;
+            position: relative;
+            text-align: center;
+            flex: 1;
+            transition: all 0.2s ease;
+        }
+        
+        .tab-button.active {
+            color: #2ba3c7;
+            font-weight: 600;
+        }
+        
+        .tab-button.active:after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: #2ba3c7;
+        }
+        
+        .tab-content {
+            display: none;
+            padding: 1rem;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
         * {
             margin: 0;
             padding: 0;
@@ -1222,71 +1267,61 @@
                 <small style="color: #999; font-size: 0.8rem;">300 x 250px</small>
             </div>
             
-            <!-- Most Read Section -->
-            <div class="sidebar-section">
-                <div class="sidebar-header">Most Read</div>
-                <div class="sidebar-content">
+            
+
+            <!-- News Tabs Section -->
+            <div class="sidebar-section news-tabs-container">
+                <div class="tabs-header">
+                    <div class="tab-button active" data-tab="most-read">Most Read</div>
+                    <div class="tab-button" data-tab="latest-news">Latest News</div>
+                </div>
+                
+                <!-- Most Read Tab Content -->
+                <div class="tab-content active" id="most-read-content">
                     <div class="news-item">
                         <div class="news-thumbnail"></div>
                         <div class="news-content">
-                            <h4><a href="#">Today's Horoscope – May 23, 2025: Check horoscope for all sun signs</a></h4>
-                            <div class="news-time">18 hours ago</div>
+                            <h4><a href="#">Today's Horoscope – May 26, 2025: Check horoscope for all sun signs</a></h4>
+                            <div class="news-time">15 hours ago</div>
                         </div>
                     </div>
                     <div class="news-item">
                         <div class="news-thumbnail"></div>
                         <div class="news-content">
-                            <h4><a href="#">Malayalam superstar Mohanlal turns 65; announces liver transplant aid, anti-drug drive</a></h4>
-                            <div class="news-time">21 May 2025, 16:05 IST</div>
+                            <h4><a href="#">Weekly Horoscope – May 25 to May 31, 2025: Check horoscope for all sun signs</a></h4>
+                            <div class="news-time">25 May 2025, 00:10 IST</div>
                         </div>
                     </div>
                     <div class="news-item">
                         <div class="news-thumbnail"></div>
                         <div class="news-content">
-                            <h4><a href="#">Somnath Bharti's wife files defamation case against Sitharaman</a></h4>
-                            <div class="news-time">20 hours ago</div>
+                            <h4><a href="#">Coders at Amazon say jobs have begun to resemble warehouse work</a></h4>
+                            <div class="news-time">23 hours ago</div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Latest News Section -->
-            <div class="sidebar-section">
-                <div class="sidebar-header">Latest News</div>
-                <div class="sidebar-content">
+                
+                <!-- Latest News Tab Content -->
+                <div class="tab-content" id="latest-news-content">
                     <div class="news-item">
                         <div class="news-thumbnail"></div>
                         <div class="news-content">
-                            <h4><a href="#">Excluding Tharoor's name from Congress list insult to him: Former Kerala state party chief K...</a></h4>
-                            <div class="news-time">22 May 2025, 16:30 IST</div>
+                            <h4><a href="#">China India's 'primary adversary', Pak mere security problem: US</a></h4>
+                            <div class="news-time">16 hours ago</div>
                         </div>
                     </div>
                     <div class="news-item">
                         <div class="news-thumbnail"></div>
                         <div class="news-content">
-                            <h4><a href="#">New OTT releases this week (May 22-30)</a></h4>
-                            <div class="news-time">19 hours ago</div>
+                            <h4><a href="#">Promising good review of medical college for Rs 10 lakh, CBI arrests doctor</a></h4>
+                            <div class="news-time">22 hours ago</div>
                         </div>
                     </div>
                     <div class="news-item">
                         <div class="news-thumbnail"></div>
                         <div class="news-content">
-                            <h4><a href="#">DOGE expanding Grok AI in US govt, raising conflict concerns</a></h4>
-                            <div class="news-time">2 hours ago</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- DH Picks Section -->
-            <div class="sidebar-section">
-                <div class="sidebar-header">DH PICKS →</div>
-                <div class="sidebar-content">
-                    <div class="news-item">
-                        <div class="news-thumbnail"></div>
-                        <div class="news-content">
-                            <h4><a href="#">Banker, baker, then mountaineer: Kerala woman's journey to peak of Mt Everest</a></h4>
-                            <div class="news-time">1 hour ago</div>
+                            <h4><a href="#">Indian pilots to have norms for flying in turbulent weather: DGCA</a></h4>
+                            <div class="news-time">5 hours ago</div>
                         </div>
                     </div>
                 </div>
@@ -1585,6 +1620,31 @@
                     clearTimeout(scrollTimeout);
                 }
                 scrollTimeout = setTimeout(handleScroll, 16); // ~60fps
+            });
+        });
+    </script>
+    <script>
+        // Tab Switching Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            
+            tabButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Get the tab id from data attribute
+                    const tabId = this.getAttribute('data-tab');
+                    
+                    // Remove active class from all buttons and content
+                    document.querySelectorAll('.tab-button').forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    document.querySelectorAll('.tab-content').forEach(content => {
+                        content.classList.remove('active');
+                    });
+                    
+                    // Add active class to clicked button and corresponding content
+                    this.classList.add('active');
+                    document.getElementById(tabId + '-content').classList.add('active');
+                });
             });
         });
     </script>
